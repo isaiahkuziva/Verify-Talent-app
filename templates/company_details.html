@@ -1,0 +1,12 @@
+<h1>Company Details</h1>
+<p>Company Name: {{ company.name }}</p>
+<p>Address: {{ company.address }}</p>
+<p>Phone Number: {{ company.phone_number }}</p>
+<p>Website: <a href="{{ company.website }}">{{ company.website }}</a></p>
+
+<h2>Departments</h2>
+<ul>
+    {% for department in departments %}
+        <li>{{ department.name }} - {{ department.description }}</li>
+    {% endfor %}
+</ul>

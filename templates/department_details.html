@@ -1,0 +1,10 @@
+<h1>Department Details</h1>
+<p>Department Name: {{ department.name }}</p>
+<p>Description: {{ department.description }}</p>
+
+<h2>Employees</h2>
+<ul>
+    {% for employee in employees %}
+        <li>{{ employee.user.username }} - {{ employee.role.name }}</li>
+    {% endfor %}
+</ul>

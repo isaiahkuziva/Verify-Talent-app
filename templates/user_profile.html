@@ -1,0 +1,9 @@
+<h1>User Profile</h1>
+<p>Username: {{ user.username }}</p>
+<p>Bio: {{ bio }}</p>
+<p>Date of Birth: {{ date_of_birth }}</p>
+{% if profile_picture %}
+    <img src="{{ profile_picture.url }}" alt="Profile Picture">
+{% else %}
+    <p>No profile picture available</p>
+{% endif %}
